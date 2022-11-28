@@ -16,7 +16,7 @@ const Counter = () => {
 
     /* on choisit de definir une variable de couleur pour l'affichage du compteur et traiter les cas,
     car on a trois cas et donc trois couleurs(rouge, bleu, et noir pour la valeur 0 du compteur)
-    si on avait deux choix, on pourrait juste faire "inline conditionnal rendering" "boolExpression ? val1 : val2*/
+    si on avait deux cas, on pourrait juste faire "inline conditionnal rendering" "boolExpression ? val1 : val2*/
     var counterColor = ""
     if (counter > 0) {
         counterColor = "rgb(22, 124, 211)";
@@ -37,6 +37,7 @@ const Counter = () => {
                 <button id="counter-minus" onClick={decrementCounter}>-</button>
                 <button id="counter-plus" onClick={incrementCounter}>+</button>
             </div>
+            {/* ajouter des textes dynamiques en fonction de la valeur du compteur */}
             {counter >= 10 && <p id="positive-text">Continuez !</p>}
             {counter <= -10 && <p id="negative-text">Ne cherchez plus le négatif !</p>}     
         </div>
