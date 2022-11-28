@@ -55,8 +55,8 @@
 
 .counter-container #positive-text {
   margin-top: 12px;
-  word-spacing: 5px;
   color: rgb(22, 124, 211);
+  font-style: italic;
 }
 
 .counter-container #negative-text {
