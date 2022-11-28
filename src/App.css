@@ -20,9 +20,6 @@
 }
 
 .counter-container .counter-control button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 65px;
   height: 40px;
   border-radius: 8px;
