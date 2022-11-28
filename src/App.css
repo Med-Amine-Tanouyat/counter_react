@@ -1,38 +1,66 @@
-.App {
+
+.counter-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100px;
+  width: 150px;
+  margin-top: -50px;
+  margin-left: -50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter-container .counter-display {
+  font-size: 48px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter-container .counter-control {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.counter-container .counter-control button {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 65px;
+  height: 40px;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#counter-minus {
+  background-color: rgb(231, 1, 16);
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#counter-minus:hover {
+  background-color: rgba(231, 1, 16, 0.7);
+}
+
+#counter-plus {
+  background-color: rgb(22, 124, 211);
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+#counter-plus:hover {
+  background-color: rgba(22, 124, 211, 0.8);
+}
+
+.counter-container #positive-text {
+  margin-top: 12px;
+  word-spacing: 5px;
+  color: rgb(22, 124, 211);
+}
+
+.counter-container #negative-text {
+  margin-top: 12px;
+  color: rgb(231, 1, 16);
+  font-style: italic;
 }
